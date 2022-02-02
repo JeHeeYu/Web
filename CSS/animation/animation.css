@@ -1,0 +1,79 @@
+#container {
+  width: 500px;
+  margin: 20px auto;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 50px;
+}
+
+#box1 {
+  background-color: #4cff00;
+  border: 1px solid transparent;
+  animation-name: a;
+  animation-duration: 3s;
+}
+
+#box2 {
+  background-color: #8f06b0;
+  border: 1px solid transparent;
+  animation-name: b;
+  animation-duration: 3s;
+}
+
+#box3 {
+  background-color: #0000bf;
+  border: 1px solid transparent;
+  animation-name: c;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+#box4 {
+  background-color: #ff0000;
+  border: 1px solid transparent;
+  animation-name: d;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes a {
+  from {
+    border: 1px solid transparent
+  }
+  to {
+    border: 1px solid #000;
+    border-radius: 50%;
+  }
+}
+
+@keyframes b {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes c {
+  from {
+    border: 1px solid transparent;
+  }
+  to {
+    border: 1px solid #000;
+    border-radius: 50%;
+  }
+}
+
+@keyframes d {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
